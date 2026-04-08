@@ -1,0 +1,84 @@
+/* Styling untuk keseluruhan halaman - Cyberpunk Theme */
+body {
+  font-family:
+    "Courier New", Courier, monospace; /* Font monospaced agar terasa teknis */
+  background-color: #0d0221; /* Gelap pekat keunguan */
+  color: #00ff9f; /* Hijau neon/cyan */
+  margin: 0;
+  padding: 20px;
+  background-image:
+    linear-gradient(rgba(13, 2, 33, 0.9), rgba(13, 2, 33, 0.9)),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      rgba(0, 255, 159, 0.05) 1px,
+      transparent 2px
+    );
+  background-size: 100% 3px; /* Efek scanline pada layar monitor lama */
+}
+
+/* Container utama */
+.card {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #1a1a2e;
+  padding: 25px;
+  border: 2px solid #ff0055; /* Border pink neon */
+  border-radius: 0px; /* Cyberpunk biasanya lebih suka sudut tajam atau miring */
+  box-shadow:
+    5px 5px 0px #00d4ff,
+    -5px -5px 0px #ff0055; /* Shadow glitch effect */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efek dekoratif sudut miring (opsional) */
+.card::before {
+  content: "SYSTEM READY";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ff0055;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 8px;
+  font-weight: bold;
+}
+
+/* Header utama */
+h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow:
+    2px 2px #ff0055,
+    -2px -2px #00d4ff;
+  font-size: 2rem;
+}
+
+/* Paragraf */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Garis pemisah */
+hr {
+  border: none;
+  height: 4px;
+  background: linear-gradient(90deg, #ff0055, #00d4ff);
+  margin: 20px 0;
+}
+
+/* Greeting */
+small {
+  display: block;
+  font-style: italic;
+  text-align: center;
+  color: #00d4ff; /* Biru neon */
+  margin-top: 15px;
+  font-weight: bold;
+  text-transform: lowercase;
+}
