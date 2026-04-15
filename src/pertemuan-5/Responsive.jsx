@@ -64,8 +64,3 @@ function ResponsiveLayout(){
         </div>
     )
 }
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div class="bg-blue-500 text-white p-4">Kolom 1 (50%)</div>
-    <div class="bg-green-500 text-white p-4">Kolom 2 (50%)</div>
-</div>
