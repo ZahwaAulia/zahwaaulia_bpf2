@@ -35,3 +35,93 @@ export const orders = [
   { id: "ORD014", customerName: "Lusiana", status: "Completed", totalPrice: 500000, orderDate: "2024-03-12" },
   { id: "ORD015", customerName: "Bambang Pamungkas", status: "Cancelled", totalPrice: 60000, orderDate: "2024-03-13" }
 ];
+export const products = [
+  {
+    id: 1,
+    name: "Nasi Goreng Special",
+    price: "Rp 25.000",
+    image:
+      "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  {
+    id: 2,
+    name: "Burger Beef Premium",
+    price: "Rp 35.000",
+    image:
+      "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  {
+    id: 3,
+    name: "Pizza Italian",
+    price: "Rp 55.000",
+    image:
+      "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop",
+  },
+
+  {
+  id: 4,
+  name: "Ramen Jepang",
+  price: "Rp 22.000",
+  image:
+    "https://images.unsplash.com/photo-1617093727343-374698b1b08d?q=80&w=1200&auto=format&fit=crop",
+},
+
+{
+  id: 5,
+  name: "Chicken Crispy Steak",
+  price: "Rp 40.000",
+  image:
+    "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=1200&auto=format&fit=crop",
+},
+
+  {
+    id: 6,
+    name: "Sate Padang",
+    price: "Rp 30.000",
+    image:
+      "https://images.unsplash.com/photo-1529563021893-cc83c992d75d?q=80&w=1200&auto=format&fit=crop",
+  },
+];
+export const testimonials = [
+  {
+    id: 1,
+    name: "Amanda Putri",
+    avatar: "https://i.pravatar.cc/150?img=32",
+    review:
+      "Makanannya enak banget dan tampilannya premium. Pengirimannya juga cepat!",
+  },
+
+  {
+    id: 2,
+    name: "Rizky Saputra",
+    avatar: "https://i.pravatar.cc/150?img=12",
+    review:
+      "Website Foodies sangat modern dan mudah digunakan untuk pesan makanan.",
+  },
+
+  {
+    id: 3,
+    name: "Nabila Aulia",
+    avatar: "https://i.pravatar.cc/150?img=48",
+    review:
+      "Menu makanannya banyak dan semuanya terlihat fresh serta berkualitas.",
+  },
+
+  {
+    id: 4,
+    name: "Kevin Jonathan",
+    avatar: "https://i.pravatar.cc/150?img=15",
+    review:
+      "Pelayanannya sangat ramah dan proses order sangat praktis.",
+  },
+
+  {
+    id: 5,
+    name: "Salsa Maharani",
+    avatar: "https://i.pravatar.cc/150?img=25",
+    review:
+      "Recommended banget buat pesan makanan sehari-hari. Desain aplikasinya keren!",
+  },
+];
