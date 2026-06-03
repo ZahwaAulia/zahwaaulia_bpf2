@@ -17,6 +17,7 @@ import Guest from "./pages/Guest";
 import Orders from "./pages/Orders";
 import Customers from "./pages/Customers";
 import NotFound from "./pages/NotFound";
+import Products from "./pages/Products";
 
 /* =========================
    Auth Pages
@@ -25,9 +26,6 @@ import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import Forgot from "./pages/auth/Forgot";
 
-/* =========================
-   Lazy Pages
-========================= */
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 
 export default function App() {
@@ -35,14 +33,11 @@ export default function App() {
     <Suspense
       fallback={
         <div className="min-h-screen flex items-center justify-center">
-          <h1 className="text-3xl font-bold text-[#4BAF47]">
-            Loading...
-          </h1>
+          <h1 className="text-3xl font-bold text-[#4BAF47]">Loading...</h1>
         </div>
       }
     >
       <Routes>
-
         {/* =========================
             ADMIN
         ========================= */}
@@ -50,6 +45,7 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
+          <Route path="products" element={<Products />} />
         </Route>
 
         {/* =========================
@@ -72,7 +68,6 @@ export default function App() {
             NOT FOUND
         ========================= */}
         <Route path="*" element={<NotFound />} />
-
       </Routes>
     </Suspense>
   );
