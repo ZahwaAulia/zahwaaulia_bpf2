@@ -94,7 +94,7 @@ export default function Notes() {
             setLoading(false)
         }
     }
-    
+
   return (
     <div className="max-w-2xl mx-auto p-6">
       <div className="mb-6">
@@ -200,3 +200,4 @@ export default function Notes() {
     </div>
   );
 }
+sdishfuihc
