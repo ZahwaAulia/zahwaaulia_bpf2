@@ -7,6 +7,8 @@ import LoadingSpinner from "../components/LoadingSpinner";
 import { AiFillDelete } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { MdNote } from "react-icons/md";
+import { useEffect, useState } from "react";
+import { fetchNotes } from "../services/notesAPI";
 
 export default function Notes() {
   const [loading, setLoading] = useState(false);
@@ -18,6 +20,7 @@ export default function Notes() {
     content: "",
     status: "",
   });
+   const [notes, setNotes] = useState([]);
 
   // Handle perubahan nilai input form
   const handleChange = (evt) => {
@@ -87,6 +90,7 @@ export default function Notes() {
             await notesAPI.deleteNote(id)
 
             // Refresh data
+              setTimeout(() => setSuccess(""), 3000);
             loadNotes()
         } catch (err) {
             setError(`Terjadi kesalahan: ${err.message}`)
@@ -200,4 +204,4 @@ export default function Notes() {
     </div>
   );
 }
-sdishfuihc
+
