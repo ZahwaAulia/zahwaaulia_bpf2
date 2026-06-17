@@ -27,6 +27,13 @@ import Register from "./pages/auth/Register";
 import Forgot from "./pages/auth/Forgot";
 
 const Dashboard = lazy(() => import("./pages/Dashboard"));
+const Notes = lazy(() => import("./pages/Notes"));
+
+// const AlertBox = lazy(() => import("./components/AlertBox"));
+// const EmptyState = lazy(() => import("./components/EmptyState"));
+// const GenericTable = lazy(() => import("./components/GenericTable"));
+// const Loading = lazy(() => import("./components/Loading"));
+
 
 export default function App() {
   return (
@@ -45,8 +52,14 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/customers" element={<Customers />} />
-          <Route path="products" element={<Products />} />   
+          <Route path="/products" element={<Products />} />   
+          <Route path="/notes" element={<Notes />} />  
           <Route path="/products/:id" element={<ProductDetail />} /> 
+
+          {/* <Route path="/alertbox" element={<AlertBox />} />
+          <Route path="/emptystate" element={<EmptyState />} />
+          <Route path="/generictable" element={<GenericTable />} />
+          <Route path="/loading" element={<Loading />} /> */}
         </Route>
 
         {/* =========================
